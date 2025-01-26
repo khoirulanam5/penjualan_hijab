@@ -1,0 +1,93 @@
+{
+    "owner": [
+        {
+            "menu": "Data User",
+            "link": "User",
+            "menusub": [
+                {
+                    "menu_sub": "Karyawan",
+                    "link_sub": "Pegawai"
+                }
+            ]
+        },
+        {
+            "menu": "Data Stok",
+            "link": "Produk",
+            "menusub": [
+                {
+                    "menu_sub": "Stok Produk",
+                    "link_sub": "Stok"
+                }
+            ]
+        },
+        {
+            "menu": "Laporan",
+            "link": "Laporan",
+            "menusub": [
+                {
+                    "menu_sub": "Penjualan",
+                    "link_sub": "Penjualan"
+                }
+            ]
+        }
+    ],
+    "admin": [
+        {
+            "menu": "Data User",
+            "link": "User",
+            "menusub": [
+                {
+                    "menu_sub": "Pelanggan",
+                    "link_sub": "Pelanggan"
+                }
+            ]
+        },
+        {
+            "menu": "Data Produk",
+            "link": "Produk",
+            "menusub": [
+                {
+                    "menu_sub": "Nama Produk",
+                    "link_sub": "Produk"
+                },
+                {
+                    "menu_sub": "Kategori Produk",
+                    "link_sub": "Kategori"
+                }
+            ]
+        },
+        {
+            "menu": "Laporan",
+            "link": "Laporan",
+            "menusub": [
+                {
+                    "menu_sub": "Penjualan",
+                    "link_sub": "Penjualan"
+                }
+            ]
+        }
+    ],
+    "karyawan": [
+        {
+            "menu": "Transaksi",
+            "link": "Transaksi",
+            "menusub": [
+                {
+                    "menu_sub": "Penjualan",
+                    "link_sub": "Penjualan"
+                },
+                {
+                    "menu_sub": "Ongkir",
+                    "link_sub": "Ongkir_toko"
+                }
+            ]
+        }
+    ],
+    "action": [
+        "Add",
+        "Edit",
+        "Delete",
+        "Detail",
+        "List"
+    ]
+}
