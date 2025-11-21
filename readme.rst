@@ -1,70 +1,135 @@
-###################
-What is CodeIgniter
-###################
+# 🛍️ Sistem Penjualan Pakaian Muslim & Muslimah dengan **CRM**, Notifikasi WA & Algoritma Diskon
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Sistem ini dirancang untuk penjualan pakaian muslim dan muslimah dengan penerapan **Customer Relationship Management (CRM)**, **notifikasi WhatsApp**, serta **algoritma pemberian diskon otomatis** bagi pelanggan yang sering melakukan checkout. Sistem dilengkapi fitur lengkap mulai dari manajemen produk, transaksi, hingga laporan penjualan.
 
-*******************
-Release Information
-*******************
+---
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+## 🚀 Teknologi yang Digunakan
 
-**************************
-Changelog and New Features
-**************************
+* **Backend:** CodeIgniter 3
+* **Database:** MySQL
+* **Frontend:** HTML, CSS, JavaScript, Bootstrap
+* **Metodologi:** CRM (Customer Relationship Management)
+* **Fitur Tambahan:** WhatsApp Notification API, Algoritma Diskon Otomatis
+* **UI/UX:** Landing Page modern dan responsif
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+---
 
-*******************
-Server Requirements
-*******************
+## 👥 Role Pengguna
 
-PHP version 5.6 or newer is recommended.
+### 1. **Karyawan**
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+* Input pesanan offline
+* Mengelola stok barang di toko
+* Membantu pelanggan melakukan checkout
 
-************
-Installation
-************
+### 2. **Admin**
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+* Mengelola produk: tambah, ubah, hapus
+* Mengelola kategori pakaian
+* Mengelola banner promo website
+* Mengatur diskon manual
+* Kelola pelanggan
 
-*******
-License
-*******
+### 3. **Owner**
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+* Melihat laporan penjualan lengkap
+* Melihat statistik CRM (pelanggan aktif, repeat order, pelanggan potensial)
+* Monitoring kinerja karyawan & admin
 
-*********
-Resources
-*********
+### 4. **Pelanggan**
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+* Melihat katalog produk
+* Checkout pembelian
+* Mendapat notifikasi WA
+* Mendapat diskon otomatis berdasarkan riwayat transaksi
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+---
 
-***************
-Acknowledgement
-***************
+## ⭐ Fitur Utama
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+### 🔹 **1. Landing Page Keren & Responsif**
+
+* Menampilkan katalog pakaian muslim & muslimah
+* Banner promo dinamis
+* Fitur pencarian produk
+
+### 🔹 **2. Manajemen Produk & Kategori**
+
+* CRUD produk
+* Upload foto produk
+* Kelola ukuran & varian warna
+
+### 🔹 **3. CRM (Customer Relationship Management)**
+
+* Analisis perilaku pelanggan
+* Tracking repeat order
+* Tingkat loyalitas pelanggan (segmen: Bronze, Silver, Gold)
+
+### 🔹 **4. Algoritma Diskon Otomatis**
+
+Diskon diberikan berdasarkan:
+
+* Jumlah checkout sebelumnya
+* Total nominal pembelian
+* Frekuensi transaksi
+
+Contoh segmentasi otomatis:
+
+* **Bronze** → Diskon 5%
+* **Silver** → Diskon 10%
+* **Gold** → Diskon 15%
+
+### 🔹 **5. Notifikasi WhatsApp**
+
+* Notifikasi pesanan berhasil
+* Notifikasi pembayaran
+* Notifikasi promo khusus member loyal
+
+### 🔹 **6. Transaksi Lengkap**
+
+* Checkout online dan offline
+* Pembayaran manual / metode lain
+* Cetak struk
+
+### 🔹 **7. Laporan Lengkap**
+
+* Laporan penjualan harian/mingguan/bulanan
+* Laporan pelanggan loyal (CRM)
+* Laporan stok produk
+* Laporan diskon
+
+---
+
+## 📂 Struktur Folder (Ringkas)
+
+```
+/application
+    /controllers
+    /models
+    /views
+/assets
+    /css
+    /js
+    /img
+/database
+    penjualan_pakaian_crm.sql
+/index.php
+```
+
+---
+
+## 🛠️ Instalasi
+
+1. Clone atau download project
+2. Import database `penjualan_pakaian_crm.sql`
+3. Atur konfigurasi database di `/application/config/database.php`
+4. Jalankan project dengan XAMPP/Laragon
+
+---
+
+## 📝 Lisensi
+
+Project ini dibuat sebagai implementasi sistem penjualan dengan CRM & algoritma diskon.
+
+---
